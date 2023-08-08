@@ -1,6 +1,7 @@
 package basic
 
 fun main() {
+    // compile error
 //    val a: String = null
 //    var b: String = "abcde"
 //    b = null
@@ -21,6 +22,13 @@ fun main() {
 
     val length = getLengthIfNotNull(null)
     println(length)
+
+    // NPE
+//    throw NullPointerException()
+//
+//    val d: String? = null
+//    val e = d!!.length
+//    println(e)
 }
 
 fun getNullStr(): String? = null
