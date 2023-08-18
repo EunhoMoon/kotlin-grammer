@@ -8,7 +8,7 @@ package advanced
     - 초기화 전에 사용할 경우 Exception 발생
     - isInitialized는 외부에서 접근할 수 없기 때문에 getter와 같은 방법으로 우회 접근해야 한다.
 */
-class `7_LateExample` {
+class Test {
 
     lateinit var text: String
 
@@ -22,6 +22,6 @@ class `7_LateExample` {
 }
 
 fun main() {
-    val test = `7_LateExample`()
+    val test = Test()
     test.printText()
 }
