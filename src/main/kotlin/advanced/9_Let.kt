@@ -8,9 +8,9 @@ package advanced
     - 수신자 객체는 람다식 내부에서 사용할 수 있는 객체의 참조
     - 스코프 함수를 사용하면 수신자 객체에 대한 참조로 this 또는 it 을 사용한다.
 */
+// let: 객체에 대한 확장함수로 반환 타입을 가질 수 있으며, 갖지 않을 수도 있다.
+// fun <T, R> T.let(T -> R): R
 fun main() {
-  // let: 객체에 대한 확장함수로 반환 타입을 가질 수 있으며, 갖지 않을 수도 있다.
-  // fun <T, R> T.let(T -> R): R
   val str: String? = "Hello"
   val result: Int? = str?.let {
     println(it)
