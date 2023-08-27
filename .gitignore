@@ -30,3 +30,8 @@ bin/
 .idea
 
 *.iml
+.gradle/
+
+build/*
+
+gradle/*
